@@ -74,6 +74,31 @@
   })();
 })();
 
+/* ── HAMBURGER MENU ── */
+const hamburger=document.getElementById('hamburger');
+const navLinks=document.getElementById('navLinks');
+
+hamburger.addEventListener('click',()=>{
+  const isOpen=navLinks.classList.toggle('open');
+  hamburger.classList.toggle('open',isOpen);
+  hamburger.setAttribute('aria-expanded',isOpen);
+});
+
+// Close menu when clicking outside
+document.addEventListener('click',e=>{
+  if(!hamburger.contains(e.target)&&!navLinks.contains(e.target)){
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+  }
+});
+
+function closeMenu(){
+  navLinks.classList.remove('open');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded','false');
+}
+
 /* ── SCROLL FADE IN ── */
 const obs=new IntersectionObserver(
   es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),

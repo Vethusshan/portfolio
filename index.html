@@ -18,7 +18,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="logo-wrap">
+    <a class="logo-wrap" href="#hero" aria-label="Go to top">
       <svg class="logo-svg" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="38" height="38" rx="10" fill="url(#lg)"/>
         <defs>
@@ -29,20 +29,24 @@
         <text x="19" y="27" text-anchor="middle" font-family="Segoe UI,sans-serif" font-weight="800" font-size="16" fill="#020817">VS</text>
       </svg>
       <span class="brand">Vethu<em>24</em></span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#chat-section">CV Chat</a></li>
-      <li><a href="#contact">Contact</a></li>
+    </a>
+    <!-- Hamburger button -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#education" onclick="closeMenu()">Education</a></li>
+      <li><a href="#chat-section" onclick="closeMenu()">CV Chat</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
     </ul>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="hero">
   <div class="hero-inner fade-in">
     <div class="hero-tag"><span class="live-dot"></span>Open to Opportunities</div>
     <div class="avatar-wrap">
