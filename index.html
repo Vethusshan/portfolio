@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Vethusshan Sivarajah — Software Engineer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+<div class="grid-overlay"></div>
+
+<div class="content">
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo-wrap">
+      <svg class="logo-svg" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="38" height="38" rx="10" fill="url(#lg)"/>
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/>
+          </linearGradient>
+        </defs>
+        <text x="19" y="27" text-anchor="middle" font-family="Segoe UI,sans-serif" font-weight="800" font-size="16" fill="#020817">VS</text>
+      </svg>
+      <span class="brand">Vethu<em>24</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#chat-section">CV Chat</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner fade-in">
+    <div class="hero-tag"><span class="live-dot"></span>Open to Opportunities</div>
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar">VS</div>
+      <div class="badge-float b1"><span class="badge-dot"></span>C# .NET</div>
+      <div class="badge-float b2"><span class="badge-dot"></span>React.js</div>
+      <div class="badge-float b3"><span class="badge-dot"></span>4+ yrs</div>
+    </div>
+    <h1 class="name">Vethu24</h1>
+    <p class="subtitle">Software Engineer · Enterprise Systems Specialist</p>
+    <p class="hero-bio">4+ years architecting enterprise desktop &amp; web applications — from POS back-office systems and ERP platforms to semiconductor control software. Specialized in C# (.NET / WinForms / WPF) and modern front-end technologies.</p>
+    <div class="typed-wrap">
+      <span style="color:var(--muted)">Currently working on</span>
+      <span id="typed"></span><span class="typed-cursor">|</span>
+    </div>
+    <div class="cta-row">
+      <a href="#experience" class="btn btn-primary">View My Work</a>
+      <a href="#chat-section" class="btn btn-outline">✦ Chat with my CV</a>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num">4+</div><div class="stat-lbl">Years Experience</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Companies</div></div>
+      <div class="stat"><div class="stat-num">7+</div><div class="stat-lbl">Projects Built</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">Tech Stack</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-eyebrow"><div class="sec-line"></div><span class="sec-label">Expertise</span></div>
+      <h2 class="sec-title">Technical <span>Skills</span></h2>
+      <div class="trending-row">
+        <div class="trend-badge"><span class="icon">⚡</span> Real-Time Systems</div>
+        <div class="trend-badge"><span class="icon">📊</span> ERP & POS Expert</div>
+        <div class="trend-badge"><span class="icon">🔐</span> Role-Based Access Control</div>
+        <div class="trend-badge"><span class="icon">📱</span> Responsive UI/UX</div>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-in"><p class="skill-cat"><span class="cat-icon">💻</span> Languages</p><div class="skill-tags"><span class="tag">C#</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">SQL</span></div></div>
+      <div class="skill-card fade-in"><p class="skill-cat"><span class="cat-icon">🎨</span> Frontend</p><div class="skill-tags"><span class="tag">React.js 18</span><span class="tag">Angular</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">WPF</span><span class="tag">WinForms</span></div></div>
+      <div class="skill-card fade-in"><p class="skill-cat"><span class="cat-icon">⚙️</span> Backend</p><div class="skill-tags"><span class="tag">ASP.NET Core MVC</span><span class="tag">.NET Framework</span><span class="tag">Web API</span><span class="tag">JSP</span></div></div>
+      <div class="skill-card fade-in"><p class="skill-cat"><span class="cat-icon">🗄️</span> Databases</p><div class="skill-tags"><span class="tag">MSSQL</span><span class="tag">MySQL</span></div></div>
+      <div class="skill-card fade-in"><p class="skill-cat"><span class="cat-icon">🛠️</span> Tools & DevOps</p><div class="skill-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Visual Studio</span><span class="tag">VS Code</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-eyebrow"><div class="sec-line"></div><span class="sec-label">Career</span></div>
+      <h2 class="sec-title">Professional <span>Experience</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="exp-item fade-in">
+        <div class="exp-dot" style="background:var(--a1);box-shadow:0 0 16px var(--a1)"></div>
+        <div class="exp-card">
+          <div class="exp-header"><span class="exp-role">Software Engineer</span><span class="exp-date">Jul 2024 – Present</span></div>
+          <p class="exp-company">Ella-Rose (Pvt) Ltd</p>
+          <p class="exp-tech">DigiPOS Back Office System · WinForms / C# / .NET</p>
+          <ul class="exp-bullets">
+            <li>Architected full-featured POS back office system supporting multi-location retail with configurable server settings.</li>
+            <li>Built role-based access control system — reduced unauthorized access incidents to <span class="impact-pill">zero</span></li>
+            <li>Developed Product Management module with barcode generation, pricing rules &amp; real-time inventory — cut catalog update time <span class="impact-pill">~40%</span></li>
+            <li>Designed Supplier Management &amp; automated Stock/Order modules with low-stock alerts.</li>
+            <li>Created Promotions Management engine for configuring and evaluating discount campaigns.</li>
+            <li>Engineered Reports Module for detailed sales, stock &amp; financial performance reporting.</li>
+            <li>Optimized database schema for fast, reliable multi-location data access.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-item fade-in">
+        <div class="exp-dot" style="background:var(--a2);box-shadow:0 0 16px var(--a2)"></div>
+        <div class="exp-card">
+          <div class="exp-header"><span class="exp-role">Associate Software Engineer</span><span class="exp-date">Jan 2022 – Jul 2024</span></div>
+          <p class="exp-company">Mindox Techno (Pvt) Ltd</p>
+          <p class="exp-tech">ERP (ASP.NET) · Metrology (WPF) · EFEM (WinForms) · Website (React.js)</p>
+          <ul class="exp-bullets">
+            <li>Designed Supplier Module for large-scale ERP with full CRUD &amp; business-aligned search.</li>
+            <li>Resolved critical ERP bugs, improving system stability across multiple business scenarios.</li>
+            <li>Built Metrology Software UI (WPF) with real-time data visualization &amp; export capabilities.</li>
+            <li>Developed EFEM software for semiconductor equipment control with real-time monitoring, data logging &amp; error handling.</li>
+            <li>Built &amp; maintained company website in React.js with responsive cross-browser design.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-item fade-in">
+        <div class="exp-dot" style="background:var(--a3);box-shadow:0 0 16px var(--a3)"></div>
+        <div class="exp-card">
+          <div class="exp-header"><span class="exp-role">Intern Software Developer</span><span class="exp-date">Apr 2021 – Dec 2021</span></div>
+          <p class="exp-company">Swiss Ranks (Pvt) Ltd</p>
+          <p class="exp-tech">HRM System (ASP.NET) · WPF Animation</p>
+          <ul class="exp-bullets">
+            <li>Diagnosed &amp; resolved HRM system bugs contributing to a more stable platform.</li>
+            <li>Developed WPF interactive robot arm animation using storyboard techniques.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-eyebrow"><div class="sec-line"></div><span class="sec-label">Portfolio</span></div>
+      <h2 class="sec-title">Academic <span>Projects</span></h2>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card fade-in"><span class="proj-icon">🎬</span><p class="proj-name">Movie Ticket Booking</p><span class="proj-stack">ASP.NET</span></div>
+      <div class="proj-card fade-in"><span class="proj-icon">🏥</span><p class="proj-name">Hospital Management System</p><span class="proj-stack">WinForms</span></div>
+      <div class="proj-card fade-in"><span class="proj-icon">📚</span><p class="proj-name">Online Bookstore</p><span class="proj-stack">C# / .NET</span></div>
+      <div class="proj-card fade-in"><span class="proj-icon">📷</span><p class="proj-name">Camera Ordering System</p><span class="proj-stack">ASP.NET</span></div>
+      <div class="proj-card fade-in"><span class="proj-icon">👥</span><p class="proj-name">Employee Management</p><span class="proj-stack">JSP</span></div>
+      <div class="proj-card fade-in"><span class="proj-icon">🍔</span><p class="proj-name">Food Ordering System</p><span class="proj-stack">PHP</span></div>
+      <div class="proj-card fade-in"><span class="proj-icon">🏧</span><p class="proj-name">Smart ATM System</p><span class="proj-stack">JSP / Raspberry Pi</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-eyebrow"><div class="sec-line"></div><span class="sec-label">Education</span></div>
+      <h2 class="sec-title">Academic <span>Background</span></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card fade-in">
+        <div class="edu-icon">🎓</div>
+        <div><p class="edu-degree">BSc (Hons) in Information Technology</p><p class="edu-school">Sri Lanka Institute of Information Technology (SLIIT)</p><span class="edu-year">2020</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CV CHAT -->
+<section id="chat-section">
+  <div class="container chat-wrap">
+    <div class="fade-in">
+      <div class="sec-eyebrow"><div class="sec-line"></div><span class="sec-label">AI Assistant</span></div>
+      <h2 class="sec-title">Chat with <span>My CV</span></h2>
+      <p style="color:var(--muted);font-size:.9rem;margin-bottom:1.5rem">Powered by Claude AI — Ask anything about my experience, skills, or projects.</p>
+    </div>
+    <div class="quick-chips">
+      <span class="chip" onclick="ask('What are Vethusshan\'s main technical skills?')">🛠 Main skills</span>
+      <span class="chip" onclick="ask('Tell me about the DigiPOS project at Ella-Rose')">💼 Current role</span>
+      <span class="chip" onclick="ask('What academic projects has Vethusshan built?')">🚀 Projects</span>
+      <span class="chip" onclick="ask('What is his educational background?')">🎓 Education</span>
+      <span class="chip" onclick="ask('How many years of experience does he have and what industries?')">📊 Experience</span>
+      <span class="chip" onclick="ask('What makes Vethusshan stand out as a candidate?')">⭐ Strengths</span>
+    </div>
+    <div class="chat-box" id="chatBox">
+      <div class="msg bot">👋 Hi! I'm Vethusshan's AI CV assistant. Ask me anything about his background, skills, or projects — I'm happy to help!</div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Ask about Vethusshan's CV…" onkeydown="if(event.key==='Enter')sendMsg()"/>
+      <button onclick="sendMsg()">Send ↗</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-eyebrow"><div class="sec-line"></div><span class="sec-label">Let's Connect</span></div>
+      <h2 class="sec-title">Get In <span>Touch</span></h2>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card fade-in" href="tel:+94777806627"><span class="contact-icon">📞</span><p class="contact-label">Phone</p><p class="contact-val">+94 777 806 627</p></a>
+      <a class="contact-card fade-in" href="mailto:vethusshan.sivarajah@gmail.com"><span class="contact-icon">✉️</span><p class="contact-label">Email</p><p class="contact-val">vethusshan.sivarajah@gmail.com</p></a>
+      <a class="contact-card fade-in" href="https://linkedin.com/in/vethusshan-sivarajah" target="_blank"><span class="contact-icon">💼</span><p class="contact-label">LinkedIn</p><p class="contact-val">vethusshan-sivarajah</p></a>
+      <div class="contact-card fade-in"><span class="contact-icon">📍</span><p class="contact-label">Location</p><p class="contact-val">Batticaloa, Sri Lanka</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <span>Vethusshan Sivarajah</span> · Software Engineer · Sri Lanka</p>
+  <p style="margin-top:.4rem;font-size:.75rem">Crafted with Three.js · Claude AI · Passion for Clean Code</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
